@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/lonitra/Downloads/MySimpleTweets/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
                     "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/values-watch-v20/values-watch-v20.xml",
