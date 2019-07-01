@@ -104,20 +104,20 @@
         "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable-watch-v20/abc_dialog_material_background.xml"
     },
     {
-        "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable-ldrtl-hdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
-        "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable-ldrtl-hdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
-    },
-    {
         "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
         "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable-xxhdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/anim_abc_slide_in_bottom.xml.flat",
-        "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/anim/abc_slide_in_bottom.xml"
+        "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable-ldrtl-hdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
+        "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable-ldrtl-hdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
         "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable_notification_tile_bg.xml.flat",
         "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/0fe2c42d08960872ea689a6a0c5ec9a1/res/drawable/notification_tile_bg.xml"
+    },
+    {
+        "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/anim_abc_slide_in_bottom.xml.flat",
+        "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/anim/abc_slide_in_bottom.xml"
     },
     {
         "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
@@ -156,24 +156,24 @@
         "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable-mdpi-v4/abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
-        "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/layout-watch-v20_abc_alert_dialog_button_bar_material.xml.flat",
-        "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/layout-watch-v20/abc_alert_dialog_button_bar_material.xml"
-    },
-    {
         "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/layout_abc_screen_simple_overlay_action_mode.xml.flat",
         "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/layout/abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/layout-watch-v20_abc_alert_dialog_button_bar_material.xml.flat",
+        "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/layout-watch-v20/abc_alert_dialog_button_bar_material.xml"
     },
     {
         "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/color_abc_hint_foreground_material_dark.xml.flat",
         "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/color/abc_hint_foreground_material_dark.xml"
     },
     {
-        "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
-        "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable-hdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable-mdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
+        "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable-hdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
@@ -208,40 +208,40 @@
         "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/0fe2c42d08960872ea689a6a0c5ec9a1/res/drawable-xhdpi-v4/notification_bg_low_normal.9.png"
     },
     {
-        "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/layout_notification_template_lines_media.xml.flat",
-        "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/36d0898c0807fc392a8023638e1db420/res/layout/notification_template_lines_media.xml"
-    },
-    {
         "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_cut_mtrl_alpha.png.flat",
         "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable-hdpi-v4/abc_ic_menu_cut_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable-v23_abc_control_background_material.xml.flat",
-        "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable-v23/abc_control_background_material.xml"
+        "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/layout_notification_template_lines_media.xml.flat",
+        "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/36d0898c0807fc392a8023638e1db420/res/layout/notification_template_lines_media.xml"
     },
     {
         "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable_abc_item_background_holo_light.xml.flat",
         "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable/abc_item_background_holo_light.xml"
     },
     {
-        "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/layout_abc_screen_toolbar.xml.flat",
-        "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/layout/abc_screen_toolbar.xml"
+        "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable-v23_abc_control_background_material.xml.flat",
+        "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable-v23/abc_control_background_material.xml"
     },
     {
-        "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/layout_abc_activity_chooser_view.xml.flat",
-        "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/layout/abc_activity_chooser_view.xml"
+        "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/layout_abc_screen_toolbar.xml.flat",
+        "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/layout/abc_screen_toolbar.xml"
     },
     {
         "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/anim_abc_shrink_fade_out_from_bottom.xml.flat",
         "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/anim/abc_shrink_fade_out_from_bottom.xml"
     },
     {
-        "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
-        "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable-xhdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
+        "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/layout_abc_activity_chooser_view.xml.flat",
+        "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/layout/abc_activity_chooser_view.xml"
     },
     {
         "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_text_select_handle_left_mtrl_dark.png.flat",
         "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable-hdpi-v4/abc_text_select_handle_left_mtrl_dark.png"
+    },
+    {
+        "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
+        "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable-xhdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
@@ -260,12 +260,12 @@
         "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/layout/abc_action_menu_layout.xml"
     },
     {
-        "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_half_black_16dp.png.flat",
-        "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable-mdpi-v4/abc_ic_star_half_black_16dp.png"
-    },
-    {
         "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_half_black_48dp.png.flat",
         "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable-mdpi-v4/abc_ic_star_half_black_48dp.png"
+    },
+    {
+        "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_ic_star_half_black_16dp.png.flat",
+        "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable-mdpi-v4/abc_ic_star_half_black_16dp.png"
     },
     {
         "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
@@ -328,12 +328,12 @@
         "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable-xhdpi-v4/abc_switch_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
-        "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable-mdpi-v4/abc_text_select_handle_middle_mtrl_dark.png"
-    },
-    {
         "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/layout-v21_notification_action.xml.flat",
         "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/0fe2c42d08960872ea689a6a0c5ec9a1/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_text_select_handle_middle_mtrl_dark.png.flat",
+        "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable-mdpi-v4/abc_text_select_handle_middle_mtrl_dark.png"
     },
     {
         "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable_abc_text_cursor_material.xml.flat",
@@ -364,12 +364,12 @@
         "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
     },
     {
-        "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
-        "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable-hdpi-v4/abc_list_pressed_holo_dark.9.png"
-    },
-    {
         "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable_abc_ratingbar_indicator_material.xml.flat",
         "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable/abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
+        "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable-hdpi-v4/abc_list_pressed_holo_dark.9.png"
     },
     {
         "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable_abc_list_divider_material.xml.flat",
@@ -404,12 +404,12 @@
         "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/layout/abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
-        "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable-xxhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
-    },
-    {
         "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
         "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable-xxhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
+        "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable-xxhdpi-v4/abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
         "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_half_black_16dp.png.flat",
@@ -548,12 +548,12 @@
         "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable/abc_spinner_textfield_background_material.xml"
     },
     {
-        "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/layout_abc_screen_content_include.xml.flat",
-        "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/layout/abc_screen_content_include.xml"
-    },
-    {
         "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable_abc_ic_voice_search_api_material.xml.flat",
         "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable/abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/layout_abc_screen_content_include.xml.flat",
+        "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/layout/abc_screen_content_include.xml"
     },
     {
         "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable_abc_seekbar_tick_mark_material.xml.flat",
@@ -576,12 +576,12 @@
         "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable-hdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
-        "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable-xxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
         "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable-mdpi-v4/abc_text_select_handle_right_mtrl_dark.png"
+    },
+    {
+        "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
+        "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/drawable-xxhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_black_36dp.png.flat",
