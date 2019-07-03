@@ -53,7 +53,6 @@ public class TimelineActivity extends AppCompatActivity {
                 // Your code to refresh the list here.
                 // Make sure you call swipeContainer.setRefreshing(false)
                 // once the network request has completed successfully.
-                Log.d("Refresh", "fetch method called");
                 fetchTimelineAsync(0);
             }
         });
@@ -67,26 +66,25 @@ public class TimelineActivity extends AppCompatActivity {
         populateTimeline();
     }
 
+
     public void fetchTimelineAsync(int page) {
         // Send the network request to fetch the updated data
         // `client` here is an instance of Android Async HTTP
         // getHomeTimeline is an example endpoint.
-        Log.d("Refresh", "inside fetch method");
-        client.getHomeTimeline(new JsonHttpResponseHandler() {
-            public void onSuccess(JSONArray json) {
-                // Remember to CLEAR OUT old items before appending in the new ones
-                Log.d("Refresh", "clear start");
-                tweetAdapter.clear();
-                Log.d("Refresh", "cleared");
-                // ...the data has come back, add new items to your adapter...
-                tweetAdapter.addAll(tweets);
-                // Now we call setRefreshing(false) to signal refresh has finished
-                Log.d("Refresh", "refresh success");
-                swipeContainer.setRefreshing(false);
-            }
 
-            public void onFailure(Throwable e) {
-                Log.d("DEBUG", "Fetch timeline error: " + e.toString());
+        client.getHomeTimeline(new JsonHttpResponseHandler() {
+            @Override
+            public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
+                // Remember to CLEAR OUT old items before appending in the new ones
+                tweetAdapter.clear();
+                updateTimeline(response);
+                // Now we call setRefreshing(false) to signal refresh has finished
+                swipeContainer.setRefreshing(false);
+                Log.d("Refresh", "refresh success");
+            }
+            @Override
+            public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
+                Log.d("DEBUG", "Fetch timeline error: " + throwable.toString());
             }
         });
     }
@@ -143,16 +141,7 @@ public class TimelineActivity extends AppCompatActivity {
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
                 //Log.d("TwitterClient", response.toString());
-                for(int i = 0; i < response.length(); i++) {
-                    try {
-                        Tweet tweet = Tweet.fromJSON(response.getJSONObject(i));
-                        tweets.add(tweet);
-                        Log.d("Timeline", "populated");
-                        tweetAdapter.notifyItemInserted(tweets.size() - 1);
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-                }
+                updateTimeline(response);
             }
 
             @Override
@@ -179,6 +168,19 @@ public class TimelineActivity extends AppCompatActivity {
                 throwable.printStackTrace();
             }
         });
+    }
+
+    private void updateTimeline(JSONArray response) {
+        for(int i = 0; i < response.length(); i++) {
+            try {
+                Tweet tweet = Tweet.fromJSON(response.getJSONObject(i));
+                tweets.add(tweet);
+                Log.d("Timeline", "populated");
+                tweetAdapter.notifyItemInserted(tweets.size() - 1);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
 }

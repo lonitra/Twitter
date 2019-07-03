@@ -456,6 +456,7 @@ color twitter_blue
 color twitter_blue_30
 color twitter_blue_50
 color twitter_blue_fill_pressed
+color white
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -881,6 +882,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout action_view_progress
 layout activity_compose
 layout activity_login
 layout activity_timeline
