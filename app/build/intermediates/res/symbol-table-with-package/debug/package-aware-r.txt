@@ -845,6 +845,7 @@ id top
 id topPanel
 id tvBody
 id tvBodyReply
+id tvCharactersLeft
 id tvCount
 id tvCreatedAt
 id tvUsername
