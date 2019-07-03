@@ -1,17 +1,21 @@
 package com.codepath.apps.restclienttemplate;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.text.format.DateUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.codepath.apps.restclienttemplate.models.Tweet;
+
+import org.parceler.Parcels;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -21,7 +25,7 @@ import java.util.Locale;
 
 public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
 
-    private List<Tweet> mTweets;
+    List<Tweet> mTweets;
     Context context;
 
     public TweetAdapter(List<Tweet> tweets) {
@@ -41,14 +45,22 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
 
     //populates info on timeline  based on position
     @Override
-    public void onBindViewHolder(@NonNull TweetAdapter.ViewHolder viewHolder, int position) {
-        Tweet tweet = mTweets.get(position);
+    public void onBindViewHolder(@NonNull TweetAdapter.ViewHolder viewHolder, final int position) {
+        final Tweet tweet = mTweets.get(position);
         viewHolder.tvBody.setText(tweet.body);
         viewHolder.tvUsername.setText(tweet.user.name);
         viewHolder.tvCreatedAt.setText(getRelativeTimeAgo(tweet.createdAt));
         Glide.with(context)
                 .load(tweet.user.profileImageUrl)
                 .into(viewHolder.ivProfileImage);
+        viewHolder.btnReply.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent replyTweet = new Intent(context, ReplyActivity.class);
+                replyTweet.putExtra("Tweet", Parcels.wrap(tweet));
+                context.startActivity(replyTweet);
+            }
+        });
     }
 
     @Override
@@ -91,6 +103,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
         public TextView tvUsername;
         public TextView tvBody;
         public TextView tvCreatedAt;
+        public Button btnReply;
 
 
 
@@ -100,7 +113,10 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
             tvBody = itemView.findViewById(R.id.tvBody);
             tvUsername = itemView.findViewById(R.id.tvUsername);
             tvCreatedAt = itemView.findViewById(R.id.tvCreatedAt);
+            btnReply = itemView.findViewById(R.id.btnReply);
         }
+
+
     }
 
 }

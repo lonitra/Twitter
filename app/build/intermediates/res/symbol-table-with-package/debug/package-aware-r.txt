@@ -720,7 +720,9 @@ id barrier
 id beginning
 id blocking
 id bottom
+id btnReply
 id btnSend
+id btnSendReply
 id buttonPanel
 id cancel_action
 id center
@@ -745,6 +747,7 @@ id edit_query
 id end
 id end_padder
 id etMakeTweet
+id etReply
 id expand_activities_button
 id expanded_menu
 id fill
@@ -765,6 +768,7 @@ id invisible
 id italic
 id item_touch_helper_previous_elevation
 id ivProfileImage
+id ivProfileReply
 id left
 id line1
 id line3
@@ -840,6 +844,7 @@ id title_template
 id top
 id topPanel
 id tvBody
+id tvBodyReply
 id tvCount
 id tvCreatedAt
 id tvUsername
@@ -885,6 +890,7 @@ layout abc_tooltip
 layout action_view_progress
 layout activity_compose
 layout activity_login
+layout activity_reply
 layout activity_timeline
 layout item_tweet
 layout notification_action
