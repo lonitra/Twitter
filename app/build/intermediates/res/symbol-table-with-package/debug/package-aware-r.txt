@@ -767,6 +767,7 @@ id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
+id ivProfileDetail
 id ivProfileImage
 id ivProfileReply
 id left
@@ -848,6 +849,7 @@ id tvBodyReply
 id tvCharactersLeft
 id tvCount
 id tvCreatedAt
+id tvUser
 id tvUsername
 id uniform
 id up
@@ -893,6 +895,7 @@ layout activity_compose
 layout activity_login
 layout activity_reply
 layout activity_timeline
+layout activity_tweet_detail
 layout item_tweet
 layout notification_action
 layout notification_action_tombstone

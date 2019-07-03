@@ -98,13 +98,12 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
         notifyDataSetChanged();
     }
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
+    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         public ImageView ivProfileImage;
         public TextView tvUsername;
         public TextView tvBody;
         public TextView tvCreatedAt;
         public Button btnReply;
-
 
 
         public ViewHolder(View itemView) {
@@ -114,6 +113,18 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
             tvUsername = itemView.findViewById(R.id.tvUsername);
             tvCreatedAt = itemView.findViewById(R.id.tvCreatedAt);
             btnReply = itemView.findViewById(R.id.btnReply);
+            itemView.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View view) {
+            int position = getAdapterPosition();
+            if(position != RecyclerView.NO_POSITION) {
+                Tweet tweet = mTweets.get(position);
+                Intent details = new Intent(context, TweetDetailActivity.class);
+                details.putExtra("TweetDetails", Parcels.wrap(tweet));
+                context.startActivity(details);
+            }
         }
 
 
