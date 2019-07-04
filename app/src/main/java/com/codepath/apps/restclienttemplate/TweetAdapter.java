@@ -113,7 +113,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
             tvUsername = itemView.findViewById(R.id.tvUsername);
             tvCreatedAt = itemView.findViewById(R.id.tvCreatedAt);
             btnReply = itemView.findViewById(R.id.btnReply);
-            itemView.setOnClickListener(this);
+            itemView.setOnClickListener(this); //sets onClickListener to viewholder itself
         }
 
         @Override

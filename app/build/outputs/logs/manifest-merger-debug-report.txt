@@ -5,6 +5,7 @@ INJECTED from /Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/sr
 INJECTED from /Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/src/main/AndroidManifest.xml:2:1-43:12
 INJECTED from /Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/src/main/AndroidManifest.xml:2:1-43:12
 MERGED from [com.codepath.libraries:android-oauth-handler:1.4.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/4b851b3e236d8b43557f7c05f9b410e6/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:design:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/20bb4e174ca9468316abd81115b56825/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.persistence.room:runtime:1.1.1] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/f08ee79d98dfd3e6d50c2656c85b1ba6/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/aebfcd3cb2edebde2281e6b1b59eb460/AndroidManifest.xml:2:1-11:12
@@ -16,6 +17,7 @@ MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/lonitra
 MERGED from [com.android.support:support-core-ui:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/1c8ae23f955eb8740298e41da5a8b76f/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-utils:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/a4a47f8b4bdf5489ffb7b9675efaefe6/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/b575939923223f22102af874cbe2b1e2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/cb7511a57b03c1d009014082cf74e768/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-media-compat:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/36d0898c0807fc392a8023638e1db420/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:loader:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/9865a60b38946ccc0940a4ca3214c5f3/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:viewpager:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/5147b73923bb53c7297fbf59c37161d2/AndroidManifest.xml:17:1-22:12
@@ -33,6 +35,7 @@ MERGED from [android.arch.persistence:db:1.1.1] /Users/lonitra/.gradle/caches/tr
 MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/bd46b19c06f6029af9acf24f95f21d85/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/6be090a034ff2771d876bebdd8b321a3/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/a7b408f65cbde0bf326b7091ab563bbf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/cec1215fca03f4034cd3daeac18c7bf3/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/c931cc247a71cbc254d3a7553c5d66ab/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:documentfile:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/f01b68e98ddb90049e6487f7526fa8a7/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/bdd361605ab010dc6d687dbdabecdcf5/AndroidManifest.xml:17:1-22:12
@@ -66,6 +69,8 @@ ADDED from /Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/src/m
 		ADDED from /Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/src/main/AndroidManifest.xml:8:22-78
 application
 ADDED from /Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/src/main/AndroidManifest.xml:10:5-41:19
+MERGED from [com.android.support:design:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/20bb4e174ca9468316abd81115b56825/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/20bb4e174ca9468316abd81115b56825/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/aebfcd3cb2edebde2281e6b1b59eb460/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/aebfcd3cb2edebde2281e6b1b59eb460/AndroidManifest.xml:9:5-20
 MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f3105d00b4450274ff7970983045fa4/AndroidManifest.xml:11:5-20
@@ -148,6 +153,8 @@ INJECTED from /Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/sr
 INJECTED from /Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/src/main/AndroidManifest.xml
 MERGED from [com.codepath.libraries:android-oauth-handler:1.4.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/4b851b3e236d8b43557f7c05f9b410e6/AndroidManifest.xml:7:5-9:41
 MERGED from [com.codepath.libraries:android-oauth-handler:1.4.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/4b851b3e236d8b43557f7c05f9b410e6/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/20bb4e174ca9468316abd81115b56825/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/20bb4e174ca9468316abd81115b56825/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.persistence.room:runtime:1.1.1] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/f08ee79d98dfd3e6d50c2656c85b1ba6/AndroidManifest.xml:20:5-44
@@ -170,6 +177,8 @@ MERGED from [com.android.support:support-core-utils:28.0.0] /Users/lonitra/.grad
 MERGED from [com.android.support:support-core-utils:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/a4a47f8b4bdf5489ffb7b9675efaefe6/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/b575939923223f22102af874cbe2b1e2/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/b575939923223f22102af874cbe2b1e2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/cb7511a57b03c1d009014082cf74e768/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/cb7511a57b03c1d009014082cf74e768/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-media-compat:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/36d0898c0807fc392a8023638e1db420/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-media-compat:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/36d0898c0807fc392a8023638e1db420/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:loader:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/9865a60b38946ccc0940a4ca3214c5f3/AndroidManifest.xml:20:5-44
@@ -204,6 +213,8 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/lonitra/.gradle/
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/6be090a034ff2771d876bebdd8b321a3/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.1] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/a7b408f65cbde0bf326b7091ab563bbf/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.1] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/a7b408f65cbde0bf326b7091ab563bbf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/cec1215fca03f4034cd3daeac18c7bf3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/cec1215fca03f4034cd3daeac18c7bf3/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/c931cc247a71cbc254d3a7553c5d66ab/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/c931cc247a71cbc254d3a7553c5d66ab/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:documentfile:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/f01b68e98ddb90049e6487f7526fa8a7/AndroidManifest.xml:20:5-44

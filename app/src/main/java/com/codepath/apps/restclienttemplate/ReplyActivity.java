@@ -85,7 +85,6 @@ public class ReplyActivity extends AppCompatActivity {
                         //parsing response
                         JSONObject response = new JSONObject(new String(responseBody));
                         Tweet result = Tweet.fromJSON(response);
-
                         //return result to calling activity
                         Intent resultData = new Intent();
                         resultData.putExtra(RESULT_KEY, Parcels.wrap(result)); //wrap tweet in parcel

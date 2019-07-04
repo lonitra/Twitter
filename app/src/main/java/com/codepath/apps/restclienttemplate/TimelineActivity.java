@@ -170,7 +170,7 @@ public class TimelineActivity extends AppCompatActivity {
         });
     }
 
-    private void updateTimeline(JSONArray response) {
+    public void updateTimeline(JSONArray response) {
         for(int i = 0; i < response.length(); i++) {
             try {
                 Tweet tweet = Tweet.fromJSON(response.getJSONObject(i));

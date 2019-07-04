@@ -90,7 +90,4 @@ public class ComposeActivity extends AppCompatActivity {
         });
     }
 
-    private void characterCount() {
-
-    }
 }

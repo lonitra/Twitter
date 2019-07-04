@@ -4,6 +4,25 @@
             "outputFile": "/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
+                    "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/20bb4e174ca9468316abd81115b56825/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "10",
+                        "endOffsets": "222"
+                    },
+                    "to": {
+                        "startLines": "5",
+                        "startColumns": "4",
+                        "startOffsets": "264",
+                        "endLines": "8",
+                        "endColumns": "10",
+                        "endOffsets": "431"
+                    }
+                },
+                {
                     "source": "/Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f019de22eabcb2d941ec9278a6482e2/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
