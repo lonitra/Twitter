@@ -34,7 +34,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="url" value="jar:file:/private/var/folders/qq/k2ch4wkj0dg271yvhb7sc9vr0000gn/T/AppTranslocation/D661F50E-2BEC-48A1-AE09-A033076EE2D0/d/Android%20Studio.app/Contents/plugins/android/lib/android.jar!/images/material_design_icons/av/ic_repeat_black_24dp.xml" />
+                                                <entry key="url" value="jar:file:/private/var/folders/qq/k2ch4wkj0dg271yvhb7sc9vr0000gn/T/AppTranslocation/D661F50E-2BEC-48A1-AE09-A033076EE2D0/d/Android%20Studio.app/Contents/plugins/android/lib/android.jar!/images/material_design_icons/content/ic_reply_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -56,7 +56,7 @@
                                   <option name="values">
                                     <map>
                                       <entry key="imageAsset" value="$USER_HOME$/Desktop/twitter-redesign-icons/mipmap-xxxhdpi-v4/ic_launcher_twitter_round.png" />
-                                      <entry key="outputName" value="ic_retweet" />
+                                      <entry key="outputName" value="ic_reply" />
                                       <entry key="themeColor" value="ffffff" />
                                     </map>
                                   </option>

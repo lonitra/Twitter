@@ -3,12 +3,12 @@ package com.codepath.apps.restclienttemplate;
 import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.widget.RecyclerView;
 import android.text.format.DateUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -53,7 +53,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
         Glide.with(context)
                 .load(tweet.user.profileImageUrl)
                 .into(viewHolder.ivProfileImage);
-        viewHolder.btnReply.setOnClickListener(new View.OnClickListener() {
+        viewHolder.fabReply.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent replyTweet = new Intent(context, ReplyActivity.class);
@@ -103,7 +103,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
         public TextView tvUsername;
         public TextView tvBody;
         public TextView tvCreatedAt;
-        public Button btnReply;
+        public FloatingActionButton fabReply;
 
 
         public ViewHolder(View itemView) {
@@ -112,7 +112,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
             tvBody = itemView.findViewById(R.id.tvBody);
             tvUsername = itemView.findViewById(R.id.tvUsername);
             tvCreatedAt = itemView.findViewById(R.id.tvCreatedAt);
-            btnReply = itemView.findViewById(R.id.btnReply);
+            fabReply = itemView.findViewById(R.id.fabReply);
             itemView.setOnClickListener(this); //sets onClickListener to viewholder itself
         }
 

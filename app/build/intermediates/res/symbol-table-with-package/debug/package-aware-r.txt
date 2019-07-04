@@ -1031,6 +1031,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_profile
+drawable ic_reply
 drawable ic_retweet
 drawable ic_twitter
 drawable mtrl_snackbar_background
@@ -1086,7 +1087,6 @@ id barrier
 id beginning
 id blocking
 id bottom
-id btnReply
 id btnSend
 id btnSendReply
 id buttonPanel
@@ -1127,6 +1127,7 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id fabFavorite
+id fabReply
 id fabRetweet
 id fill
 id fill_horizontal

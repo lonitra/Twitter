@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:outlineSpotShadowColor="@color/medium_gray"
     android:background="@color/white">
 
     <ImageView
@@ -12,14 +13,13 @@
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="44dp"
         android:background="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/tvBody"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@android:color/background_dark" />
 
     <TextView
@@ -31,8 +31,6 @@
         android:background="@color/white"
         android:text="Body..."
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnReply"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
         app:layout_constraintTop_toBottomOf="@+id/tvUsername" />
 
@@ -61,18 +59,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/btnReply"
-        style="@style/Widget.AppCompat.Button.Small"
-        android:layout_width="77dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@android:color/transparent"
-        android:text="Reply"
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabReply"
+        android:layout_width="46dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/white"
+        android:clickable="true"
+        android:src="@drawable/ic_reply"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:fabSize="mini"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/tvBody"
-        app:layout_constraintTop_toBottomOf="@+id/tvCreatedAt" />
+        app:layout_constraintTop_toBottomOf="@+id/tvCreatedAt"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@android:color/background_dark" />
 </android.support.constraint.ConstraintLayout>
