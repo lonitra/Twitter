@@ -29,13 +29,14 @@ import cz.msebera.android.httpclient.Header;
 public class TimelineActivity extends AppCompatActivity {
     public static final int REQUEST_CODE = 100;
     public static final String RESULT_KEY = "result_tweet";
-    public String maxId;
+    public long maxId;
     private TwitterClient client;
     private SwipeRefreshLayout swipeContainer;
     TweetAdapter tweetAdapter;
     ArrayList<Tweet> tweets;
     RecyclerView rvTweets;
     FloatingActionButton fabCompose;
+    private EndlessRecyclerViewScrollListener scrollListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,17 +47,37 @@ public class TimelineActivity extends AppCompatActivity {
         rvTweets = findViewById(R.id.rvTweet);
         tweets = new ArrayList<Tweet>();
         tweetAdapter = new TweetAdapter(tweets);
-        rvTweets.setLayoutManager(new LinearLayoutManager(this));
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+        rvTweets.setLayoutManager(linearLayoutManager);
         rvTweets.setAdapter(tweetAdapter);
         swipeContainer = (SwipeRefreshLayout) findViewById(R.id.swipeContainer);
         refresh();
-        populateTimeline();
+        populateTimeline(maxId);
         fabCompose.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 composeMessage();
             }
         });
+        scrollListener = new EndlessRecyclerViewScrollListener(linearLayoutManager) {
+            @Override
+            public void onLoadMore(int page, int totalItemsCount, RecyclerView view) {
+                // Triggered only when new data needs to be appended to the list
+                // Add whatever code is needed to append new items to the bottom of the list
+                loadNextDataFromApi(page);
+            }
+        };
+        rvTweets.addOnScrollListener(scrollListener);
+    }
+
+    public void loadNextDataFromApi(int offset) {
+        // Send an API request to retrieve appropriate paginated data
+        //  --> Send the request including an offset value (i.e `page`) as a query parameter.
+        //  --> Deserialize and construct new model objects from the API response
+        //  --> Append the new data objects to the existing set of items inside the array of items
+        //  --> Notify the adapter of the new items made with `notifyItemRangeInserted()`
+        maxId = tweets.get(tweets.size() - 1).uid;
+        populateTimeline(maxId);
     }
 
 
@@ -80,7 +101,7 @@ public class TimelineActivity extends AppCompatActivity {
             public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
                 Log.d("DEBUG", "Fetch timeline error: " + throwable.toString());
             }
-        });
+        }, maxId);
     }
 
 
@@ -138,7 +159,7 @@ public class TimelineActivity extends AppCompatActivity {
         return true;
     }
 
-    private void populateTimeline() {
+    private void populateTimeline(long maxId) {
         client.getHomeTimeline(new JsonHttpResponseHandler(){
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
@@ -169,7 +190,7 @@ public class TimelineActivity extends AppCompatActivity {
                 Log.d("TwitterClient", errorResponse.toString());
                 throwable.printStackTrace();
             }
-        });
+        }, maxId);
     }
 
     public void updateTimeline(JSONArray response) {

@@ -7,8 +7,7 @@
         android:title="icon"
         android:backgroundTint="@color/twitter_blue"
         android:icon="@drawable/twitter_icon"
-        app:showAsAction="always"
-        tools:override="true"/>
+        app:showAsAction="always" />
 
 
 </menu>
