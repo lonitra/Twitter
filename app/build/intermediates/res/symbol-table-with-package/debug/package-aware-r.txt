@@ -1033,7 +1033,6 @@ drawable ic_mtrl_chip_close_circle
 drawable ic_profile
 drawable ic_reply
 drawable ic_retweet
-drawable ic_twitter
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
@@ -1051,6 +1050,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable twitter_icon
 id ALT
 id CTRL
 id FUNCTION
@@ -1164,6 +1164,7 @@ id masked
 id media_actions
 id message
 id miCompose
+id miIcon
 id middle
 id mini
 id mtrl_child_content_container

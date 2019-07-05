@@ -11,6 +11,7 @@ MERGED from [android.arch.persistence.room:runtime:1.1.1] /Users/lonitra/.gradle
 MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/aebfcd3cb2edebde2281e6b1b59eb460/AndroidManifest.xml:2:1-11:12
 MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f3105d00b4450274ff7970983045fa4/AndroidManifest.xml:2:1-13:12
 MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/cf7c0331db43f8e90b2840465508c02a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.jakewharton:butterknife:8.4.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/369c1e82ecd8ff25ce67aba9d0bd68a1/AndroidManifest.xml:2:1-7:12
 MERGED from [com.android.support:support-v4:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/d46aa8831ce7aef46d0c269369696fca/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/2cc7046b8657ab178455413c2dfb3a26/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/141ff71f81c4fda3da42c118ea7b033c/AndroidManifest.xml:17:1-22:12
@@ -165,6 +166,8 @@ MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/lonitra/.gradle/caches/tra
 MERGED from [com.facebook.stetho:stetho:1.5.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/9f3105d00b4450274ff7970983045fa4/AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/cf7c0331db43f8e90b2840465508c02a/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/cf7c0331db43f8e90b2840465508c02a/AndroidManifest.xml:20:5-44
+MERGED from [com.jakewharton:butterknife:8.4.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/369c1e82ecd8ff25ce67aba9d0bd68a1/AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.4.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/369c1e82ecd8ff25ce67aba9d0bd68a1/AndroidManifest.xml:5:5-43
 MERGED from [com.android.support:support-v4:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/d46aa8831ce7aef46d0c269369696fca/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/d46aa8831ce7aef46d0c269369696fca/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:28.0.0] /Users/lonitra/.gradle/caches/transforms-2/files-2.1/2cc7046b8657ab178455413c2dfb3a26/AndroidManifest.xml:20:5-44

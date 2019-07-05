@@ -2,6 +2,7 @@ package com.codepath.apps.restclienttemplate;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.widget.RecyclerView;
@@ -27,6 +28,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
 
     List<Tweet> mTweets;
     Context context;
+    boolean clicked;
 
     public TweetAdapter(List<Tweet> tweets) {
         mTweets = tweets;
@@ -39,6 +41,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
         LayoutInflater inflater = LayoutInflater.from(context);
         View tweetView = inflater.inflate(R.layout.item_tweet, viewGroup, false);
         ViewHolder viewHolder = new ViewHolder(tweetView);
+        clicked = false;
         return viewHolder;
     }
 
@@ -63,6 +66,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
                 reply(tweet);
             }
         });
+        favorite(viewHolder.fabFavorite);
     }
 
     @Override
@@ -114,6 +118,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
         public TextView tvCreatedAt;
         public FloatingActionButton fabReply;
         public ImageView ivMedia;
+        public FloatingActionButton fabFavorite;
 
 
         public ViewHolder(View itemView) {
@@ -124,6 +129,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
             tvCreatedAt = itemView.findViewById(R.id.tvCreatedAt);
             fabReply = itemView.findViewById(R.id.fabReply);
             ivMedia = itemView.findViewById(R.id.ivMedia);
+            fabFavorite = itemView.findViewById(R.id.fabFavorite);
             itemView.setOnClickListener(this); //sets onClickListener to viewholder itself
         }
 
@@ -139,6 +145,20 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
         }
 
 
+    }
+    private void favorite(final FloatingActionButton fabFavorite) {
+        fabFavorite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!clicked) {
+                    fabFavorite.setColorFilter(context.getResources().getColor(R.color.medium_red));
+                    clicked = true;
+                } else {
+                    fabFavorite.setColorFilter(Color.DKGRAY);
+                    clicked = false;
+                }
+            }
+        });
     }
 
 }
