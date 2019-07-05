@@ -50,11 +50,11 @@ public class TweetDetailActivity extends AppCompatActivity {
         Glide.with (this)
                 .load(tweet.user.profileImageUrl)
                 .into(ivProfile);
-//        if(!tweet.media.equals("")) {
-//            Glide.with(this)
-//                    .load(tweet.media)
-//                    .into(ivMedia);
-//        }
+        if(!tweet.media.equals("")) {
+            Glide.with(this)
+                    .load(tweet.media)
+                    .into(ivMedia);
+        }
         favorite();
         retweet();
     }
