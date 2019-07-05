@@ -59,10 +59,13 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
                 .bitmapTransform(new RoundedCornersTransformation(context, 30, 0))
                 .into(viewHolder.ivProfileImage);
         if(!tweet.media.equals("")) { //tweet has a media
+            viewHolder.ivMedia.setVisibility(View.VISIBLE);
             Glide.with(context)
                     .load(tweet.media)
                     .bitmapTransform(new RoundedCornersTransformation(context, 10, 0))
                     .into(viewHolder.ivMedia);
+        } else {
+            viewHolder.ivMedia.setVisibility(View.GONE);
         }
         viewHolder.fabReply.setOnClickListener(new View.OnClickListener() {
             @Override

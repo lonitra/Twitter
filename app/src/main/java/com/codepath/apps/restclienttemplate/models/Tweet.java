@@ -20,11 +20,12 @@ public class Tweet {
         tweet.createdAt = object.getString("created_at");
         tweet.user = User.fromJSON(object.getJSONObject("user"));
         JSONObject entities = object.getJSONObject("entities");
-        tweet.media = "";
         if(entities.has("media")) {
             JSONArray medias = entities.getJSONArray("media");
             JSONObject object2 = (JSONObject) medias.get(0);
             tweet.media = object2.getString("media_url");
+        } else {
+            tweet.media = "";
         }
         return tweet;
     }
