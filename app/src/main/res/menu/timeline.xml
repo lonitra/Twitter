@@ -7,14 +7,8 @@
         android:title="icon"
         android:backgroundTint="@color/twitter_blue"
         android:icon="@drawable/twitter_icon"
-        app:showAsAction="always" />
-    <item
-        android:id="@+id/miCompose"
-        android:icon="@drawable/ic_compose"
-        android:iconTint="@color/white"
-        app:showAsAction="ifRoom"
-        android:title="Compose">
-    </item>
+        app:showAsAction="always"
+        tools:override="true"/>
 
 
 </menu>

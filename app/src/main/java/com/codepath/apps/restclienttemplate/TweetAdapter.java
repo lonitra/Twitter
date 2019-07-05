@@ -67,6 +67,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
             }
         });
         favorite(viewHolder.fabFavorite);
+        retweet(viewHolder.fabRetweet);
     }
 
     @Override
@@ -119,6 +120,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
         public FloatingActionButton fabReply;
         public ImageView ivMedia;
         public FloatingActionButton fabFavorite;
+        public FloatingActionButton fabRetweet;
 
 
         public ViewHolder(View itemView) {
@@ -130,6 +132,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
             fabReply = itemView.findViewById(R.id.fabReply);
             ivMedia = itemView.findViewById(R.id.ivMedia);
             fabFavorite = itemView.findViewById(R.id.fabFavorite);
+            fabRetweet = itemView.findViewById(R.id.fabRetweet);
             itemView.setOnClickListener(this); //sets onClickListener to viewholder itself
         }
 
@@ -157,6 +160,15 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
                     fabFavorite.setColorFilter(Color.DKGRAY);
                     clicked = false;
                 }
+            }
+        });
+    }
+
+    private void retweet(final FloatingActionButton fabRetweet) {
+        fabRetweet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fabRetweet.setColorFilter(context.getResources().getColor(R.color.medium_green));
             }
         });
     }

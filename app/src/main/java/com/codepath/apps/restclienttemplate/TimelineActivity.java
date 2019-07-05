@@ -2,13 +2,14 @@ package com.codepath.apps.restclienttemplate;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.Menu;
-import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 import com.codepath.apps.restclienttemplate.models.Tweet;
@@ -28,18 +29,20 @@ import cz.msebera.android.httpclient.Header;
 public class TimelineActivity extends AppCompatActivity {
     public static final int REQUEST_CODE = 100;
     public static final String RESULT_KEY = "result_tweet";
+    public String maxId;
     private TwitterClient client;
     private SwipeRefreshLayout swipeContainer;
     TweetAdapter tweetAdapter;
     ArrayList<Tweet> tweets;
     RecyclerView rvTweets;
+    FloatingActionButton fabCompose;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timeline);
         client = TwitterApp.getRestClient(this);
-
+        fabCompose = findViewById(R.id.fabCompose);
         rvTweets = findViewById(R.id.rvTweet);
         tweets = new ArrayList<Tweet>();
         tweetAdapter = new TweetAdapter(tweets);
@@ -48,7 +51,14 @@ public class TimelineActivity extends AppCompatActivity {
         swipeContainer = (SwipeRefreshLayout) findViewById(R.id.swipeContainer);
         refresh();
         populateTimeline();
+        fabCompose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                composeMessage();
+            }
+        });
     }
+
 
 
     public void fetchTimelineAsync(int page) {
@@ -74,17 +84,17 @@ public class TimelineActivity extends AppCompatActivity {
     }
 
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle presses on the action bar items
-        switch (item.getItemId()) {
-            case R.id.miCompose:
-                composeMessage();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        // Handle presses on the action bar items
+//        switch (item.getItemId()) {
+//            case R.id.fabCompose:
+//                composeMessage();
+//                return true;
+//            default:
+//                return super.onOptionsItemSelected(item);
+//        }
+//    }
 
     //Starts activity for composing a tweet
     private void composeMessage() {

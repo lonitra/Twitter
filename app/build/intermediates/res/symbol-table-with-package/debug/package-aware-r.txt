@@ -1126,6 +1126,7 @@ id etReply
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id fabCompose
 id fabFavorite
 id fabReply
 id fabRetweet
@@ -1136,6 +1137,7 @@ id filled
 id fixed
 id forever
 id ghost_view
+id glide_custom_view_target_tag
 id gone
 id group_divider
 id groups
@@ -1163,7 +1165,6 @@ id list_item
 id masked
 id media_actions
 id message
-id miCompose
 id miIcon
 id middle
 id mini
