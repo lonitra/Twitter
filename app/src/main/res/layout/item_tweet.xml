@@ -32,7 +32,7 @@
         android:layout_marginBottom="8dp"
         android:background="@color/white"
         android:text="Body..."
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/ivMedia"
         app:layout_constraintStart_toEndOf="@+id/ivProfileImage"
         app:layout_constraintTop_toBottomOf="@+id/tvUsername" />
 
@@ -89,14 +89,15 @@
 
     <ImageView
         android:id="@+id/ivMedia"
-        android:layout_width="63dp"
-        android:layout_height="34dp"
+        android:layout_width="124dp"
+        android:layout_height="89dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvBody"
-        android:background="@color/white"
         app:srcCompat="@android:color/transparent" />
 </android.support.constraint.ConstraintLayout>

@@ -97,17 +97,9 @@ public class TimelineActivity extends AppCompatActivity {
             case R.id.miCompose:
                 composeMessage();
                 return true;
-            case R.id.miProfile:
-                showProfileView();
-                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
-    }
-
-    //current does not do anything
-    private void showProfileView() {
-
     }
 
     //Starts activity for composing a tweet

@@ -55,8 +55,9 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="imageAsset" value="$USER_HOME$/Desktop/twitter-redesign-icons/mipmap-xxxhdpi-v4/ic_launcher_twitter_round.png" />
-                                      <entry key="outputName" value="ic_reply" />
+                                      <entry key="assetType" value="IMAGE" />
+                                      <entry key="imageAsset" value="$USER_HOME$/Desktop/twitter-redesign-icons/pngs/ic_vector_heart.png" />
+                                      <entry key="outputName" value="ic_favorite" />
                                       <entry key="themeColor" value="ffffff" />
                                     </map>
                                   </option>
