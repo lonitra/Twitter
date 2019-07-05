@@ -61,6 +61,11 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
                 context.startActivity(replyTweet);
             }
         });
+        if(!tweet.media.equals("")) {
+            Glide.with(context)
+                    .load(tweet.media)
+                    .into(viewHolder.ivMedia);
+        }
     }
 
     @Override
@@ -104,6 +109,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
         public TextView tvBody;
         public TextView tvCreatedAt;
         public FloatingActionButton fabReply;
+        public ImageView ivMedia;
 
 
         public ViewHolder(View itemView) {
@@ -113,6 +119,7 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
             tvUsername = itemView.findViewById(R.id.tvUsername);
             tvCreatedAt = itemView.findViewById(R.id.tvCreatedAt);
             fabReply = itemView.findViewById(R.id.fabReply);
+            ivMedia = itemView.findViewById(R.id.ivMedia);
             itemView.setOnClickListener(this); //sets onClickListener to viewholder itself
         }
 
