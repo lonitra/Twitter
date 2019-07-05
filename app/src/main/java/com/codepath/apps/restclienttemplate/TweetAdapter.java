@@ -37,7 +37,6 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         context = viewGroup.getContext();
         LayoutInflater inflater = LayoutInflater.from(context);
-
         View tweetView = inflater.inflate(R.layout.item_tweet, viewGroup, false);
         ViewHolder viewHolder = new ViewHolder(tweetView);
         return viewHolder;
@@ -53,19 +52,17 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
         Glide.with(context)
                 .load(tweet.user.profileImageUrl)
                 .into(viewHolder.ivProfileImage);
-        viewHolder.fabReply.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent replyTweet = new Intent(context, ReplyActivity.class);
-                replyTweet.putExtra("Tweet", Parcels.wrap(tweet));
-                context.startActivity(replyTweet);
-            }
-        });
-        if(!tweet.media.equals("")) {
+        if(!tweet.media.equals("")) { //tweet has a media
             Glide.with(context)
                     .load(tweet.media)
                     .into(viewHolder.ivMedia);
         }
+        viewHolder.fabReply.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                reply(tweet);
+            }
+        });
     }
 
     @Override
@@ -89,6 +86,13 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
         }
 
         return relativeDate;
+    }
+
+    //fires intent to ReplyActivity.class with tweet information
+    private void reply(Tweet tweet) {
+        Intent replyTweet = new Intent(context, ReplyActivity.class);
+        replyTweet.putExtra("Tweet", Parcels.wrap(tweet));
+        context.startActivity(replyTweet);
     }
 
     // Clean all elements of the recycler

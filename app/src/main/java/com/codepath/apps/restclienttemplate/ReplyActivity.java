@@ -50,29 +50,7 @@ public class ReplyActivity extends AppCompatActivity {
         Glide.with(this)
                 .load(replyTweet.user.profileImageUrl)
                 .into(ivProfileReply);
-
-        etReply.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                int characters = etReply.getText().length();
-                tvCharactersLeft.setText((280 - s.length()) + " characters left");
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-            }
-        });
-
-        btnSendReply.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                sendReply();
-            }
-        });
+        replyListener();
 
     }
 
@@ -99,6 +77,30 @@ public class ReplyActivity extends AppCompatActivity {
             @Override
             public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
 
+            }
+        });
+    }
+
+    private void replyListener() {
+        btnSendReply.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendReply();
+                etReply.addTextChangedListener(new TextWatcher() {
+                    @Override
+                    public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+                    }
+
+                    @Override
+                    public void onTextChanged(CharSequence s, int start, int before, int count) {
+                        int characters = etReply.getText().length();
+                        tvCharactersLeft.setText((280 - s.length()) + " characters left");
+                    }
+
+                    @Override
+                    public void afterTextChanged(Editable s) {
+                    }
+                });
             }
         });
     }

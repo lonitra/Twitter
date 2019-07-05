@@ -28,6 +28,7 @@ public class TweetDetailActivity extends AppCompatActivity {
     ImageView ivProfile;
     FloatingActionButton fabFavorite;
     FloatingActionButton fabRetweet;
+    ImageView ivMedia;
     Boolean clicked;
     TwitterClient client;
 
@@ -40,6 +41,7 @@ public class TweetDetailActivity extends AppCompatActivity {
         ivProfile = findViewById(R.id.ivProfileDetail);
         fabFavorite = findViewById(R.id.fabFavorite);
         fabRetweet = findViewById(R.id.fabRetweet);
+        ivMedia = findViewById(R.id.ivMedia);
         clicked = false;
         client = TwitterApp.getRestClient(this);
         Tweet tweet = Parcels.unwrap(getIntent().getParcelableExtra("TweetDetails"));
@@ -48,27 +50,13 @@ public class TweetDetailActivity extends AppCompatActivity {
         Glide.with (this)
                 .load(tweet.user.profileImageUrl)
                 .into(ivProfile);
-
-        fabFavorite.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(!clicked) {
-                    fabFavorite.setColorFilter(getResources().getColor(R.color.medium_red));
-                    clicked = true;
-                } else {
-                    fabFavorite.setColorFilter(Color.DKGRAY);
-                    clicked = false;
-                }
-            }
-        });
-
-        fabRetweet.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                fabRetweet.setColorFilter(getResources().getColor(R.color.medium_green));
-                sendRetweet();
-            }
-        });
+//        if(!tweet.media.equals("")) {
+//            Glide.with(this)
+//                    .load(tweet.media)
+//                    .into(ivMedia);
+//        }
+        favorite();
+        retweet();
     }
 
     public void sendRetweet() {
@@ -94,6 +82,31 @@ public class TweetDetailActivity extends AppCompatActivity {
             @Override
             public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
 
+            }
+        });
+    }
+
+    private void favorite() {
+        fabFavorite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!clicked) {
+                    fabFavorite.setColorFilter(getResources().getColor(R.color.medium_red));
+                    clicked = true;
+                } else {
+                    fabFavorite.setColorFilter(Color.DKGRAY);
+                    clicked = false;
+                }
+            }
+        });
+    }
+
+    private void retweet() {
+        fabRetweet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fabRetweet.setColorFilter(getResources().getColor(R.color.medium_green));
+                sendRetweet();
             }
         });
     }

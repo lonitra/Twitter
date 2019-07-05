@@ -1,4 +1,4 @@
-#Thu Jul 04 17:35:41 PDT 2019
+#Thu Jul 04 18:25:26 PDT 2019
 base.0=/Users/lonitra/AndroidStudioProjects/MySimpleTweets/Twitter/app/build/intermediates/dex/debug/mergeDexDebug/out
 path.0=classes.dex
 renamed.0=classes.dex
