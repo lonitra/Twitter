@@ -23,6 +23,8 @@ import java.text.SimpleDateFormat;
 import java.util.List;
 import java.util.Locale;
 
+import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
+
 
 public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
 
@@ -54,10 +56,12 @@ public class TweetAdapter extends RecyclerView.Adapter<TweetAdapter.ViewHolder>{
         viewHolder.tvCreatedAt.setText(getRelativeTimeAgo(tweet.createdAt));
         Glide.with(context)
                 .load(tweet.user.profileImageUrl)
+                .bitmapTransform(new RoundedCornersTransformation(context, 30, 0))
                 .into(viewHolder.ivProfileImage);
         if(!tweet.media.equals("")) { //tweet has a media
             Glide.with(context)
                     .load(tweet.media)
+                    .bitmapTransform(new RoundedCornersTransformation(context, 10, 0))
                     .into(viewHolder.ivMedia);
         }
         viewHolder.fabReply.setOnClickListener(new View.OnClickListener() {

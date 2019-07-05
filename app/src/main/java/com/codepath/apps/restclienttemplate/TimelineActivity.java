@@ -71,11 +71,6 @@ public class TimelineActivity extends AppCompatActivity {
     }
 
     public void loadNextDataFromApi(int offset) {
-        // Send an API request to retrieve appropriate paginated data
-        //  --> Send the request including an offset value (i.e `page`) as a query parameter.
-        //  --> Deserialize and construct new model objects from the API response
-        //  --> Append the new data objects to the existing set of items inside the array of items
-        //  --> Notify the adapter of the new items made with `notifyItemRangeInserted()`
         maxId = tweets.get(tweets.size() - 1).uid;
         populateTimeline(maxId);
     }

@@ -19,6 +19,7 @@ import org.json.JSONObject;
 import org.parceler.Parcels;
 
 import cz.msebera.android.httpclient.Header;
+import jp.wasabeef.glide.transformations.RoundedCornersTransformation;
 
 import static com.codepath.apps.restclienttemplate.TimelineActivity.RESULT_KEY;
 
@@ -49,10 +50,12 @@ public class TweetDetailActivity extends AppCompatActivity {
         tvUser.setText(tweet.user.name);
         Glide.with (this)
                 .load(tweet.user.profileImageUrl)
+                .bitmapTransform(new RoundedCornersTransformation(this, 30, 0))
                 .into(ivProfile);
         if(!tweet.media.equals("")) {
             Glide.with(this)
                     .load(tweet.media)
+                    .bitmapTransform(new RoundedCornersTransformation(this, 10, 0))
                     .into(ivMedia);
         }
         favorite();
