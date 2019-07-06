@@ -23,7 +23,7 @@ The following **stretch** features are implemented:
 * [x] User can **see a counter with total number of characters left for tweet** on compose tweet page
 * [x] User can **pull down to refresh tweets timeline**
 * [x] User is using **"Twitter branded" colors and styles**
-* [ ] User sees an **indeterminate progress indicator** when any background or network task is happening
+* [x] User sees an **indeterminate progress indicator** when any background or network task is happening
 * [x] User can **select "reply" from detail view to respond to a tweet**
   * [x] User that wrote the original tweet is **automatically "@" replied in compose**
 * [x] User can tap a tweet to **open a detailed tweet view**
@@ -57,7 +57,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+This most challenging part of building this app was making the app look similar to the real Twitter. From this project I learned a lot about JSON, Floating Action Buttons and setting onClickListeners.
 
 ## Open-source libraries used
 
