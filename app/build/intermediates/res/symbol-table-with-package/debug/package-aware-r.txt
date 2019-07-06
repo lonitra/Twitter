@@ -1164,6 +1164,7 @@ id list_item
 id masked
 id media_actions
 id message
+id miActionProgress
 id miIcon
 id middle
 id mini
@@ -1183,6 +1184,7 @@ id parallax
 id parent
 id parentPanel
 id parent_matrix
+id pbProgressAction
 id percent
 id pin
 id progress_circular

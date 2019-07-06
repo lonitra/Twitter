@@ -9,6 +9,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
@@ -37,6 +38,7 @@ public class TimelineActivity extends AppCompatActivity {
     RecyclerView rvTweets;
     FloatingActionButton fabCompose;
     private EndlessRecyclerViewScrollListener scrollListener;
+    MenuItem miActionProgressItem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,6 +77,25 @@ public class TimelineActivity extends AppCompatActivity {
         populateTimeline(maxId);
     }
 
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        // Store instance of the menu item containing progress
+        miActionProgressItem = menu.findItem(R.id.miActionProgress);
+
+        // Return to finish
+        return super.onPrepareOptionsMenu(menu);
+    }
+
+    public void showProgressBar() {
+        // Show progress item
+        miActionProgressItem.setVisible(true);
+    }
+
+    public void hideProgressBar() {
+        // Hide progress item
+        miActionProgressItem.setVisible(false);
+    }
+
 
 
     public void fetchTimelineAsync(int page) {
@@ -86,11 +107,13 @@ public class TimelineActivity extends AppCompatActivity {
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
                 // Remember to CLEAR OUT old items before appending in the new ones
+                showProgressBar();
                 tweetAdapter.clear();
                 updateTimeline(response);
                 // Now we call setRefreshing(false) to signal refresh has finished
                 swipeContainer.setRefreshing(false);
                 Log.d("Refresh", "refresh success");
+                hideProgressBar();
             }
             @Override
             public void onFailure(int statusCode, Header[] headers, String responseString, Throwable throwable) {
@@ -159,7 +182,9 @@ public class TimelineActivity extends AppCompatActivity {
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
                 //Log.d("TwitterClient", response.toString());
+                showProgressBar();
                 updateTimeline(response);
+                hideProgressBar();
             }
 
             @Override
